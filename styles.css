@@ -1,0 +1,106 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+body {
+  font-family: Garamond, serif;
+  /* Georgia, serif; Verdana, sans-serif;*/
+  background-color: #333;
+  max-width: 960px;
+  background-image: linear-gradient(#444, black);
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*justify-content: center; */
+  align-items: center;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.roll_result {
+  text-align: center;
+  font-size: 2rem;
+  color: #ddd;
+}
+
+.tb {
+  font-family: Garamond, serif;
+  font-size: 120%;
+  min-width: 70px;
+  width: 100px;
+  min-height: 70px;
+  margin: 0px;
+  padding: 0px;
+  
+  color: white;
+  border-radius: 10px;
+  border-color: #522;
+  background-color: #522;
+  background-image: linear-gradient(to bottom right, #d13232, #000); /*red - black*/
+  /*background-image: linear-gradient(to bottom right, #faa, #5aa); /*pink - blue */
+  /*background-image: linear-gradient(to bottom right, #5a5, #000); /*green - black */
+}
+
+.tb:hover {
+  border-color: #522;
+  background-color: #522;
+  background-image: linear-gradient(to bottom right, #000, #d13232); /*red - black*/
+  /*background-image: linear-gradient(to bottom right, #5aa, #faa); /*pink - blue */
+  /*background-image: linear-gradient(to bottom right, #000, #5a5); /*green - black */
+}
+
+table {
+  min-width: 60%;
+}
+
+table, th, td {
+  /*border: 1px solid white;*/
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dice_tbl {
+  /* height: 100%; */
+  /* border: 1px solid black; */
+  /* flexbox stuff */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 10px auto; /* top right bottom left */
+}
+
+#histLabel {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+/* list styling */
+.hist {
+  color: #ddd;
+  /*border: 1px solid black;*/
+  border-bottom: 1px solid #777;
+}
+
+ul {
+  width: 100%;
+  /*float: right;*/
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}

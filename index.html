@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <script src="roll_dice.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="">
+      <div class="roll_result">
+        <h1>Simple Dice Roller</h1>
+        <label>Roll : </label>
+        <span id="result">roll a die!</span>
+      </div>
+
+      <div class="dice_tbl">
+        <table>
+          <tr>
+            <td><button type="button" onclick="genNum(4)" class="tb" value="d4">1d4</button></td>
+            <td><button type="button" onclick="genNum(6)" class="tb" value="d6">1d6</button></td>
+            <td><button type="button" onclick="genNum(8)" class="tb" value="d8">1d8</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" onclick="genNum(10)" class="tb" value="d10">1d10</button></td>
+            <td><button type="button" onclick="genNum(12)" class="tb" value="d12">1d12</button></td>
+            <td><button type="button" onclick="genNum(20)" class="tb" value="d20">1d20</button></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="button" onclick="genNum(100)" class="tb" value="d100">1d100</button></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="hist">
+        <label id="histLabel">history: last 5</label>
+        <div>
+        <ul id="hist_list">
+          <li>none</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
